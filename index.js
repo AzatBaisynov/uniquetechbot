@@ -41,10 +41,6 @@ bot.on("message", async (msg) => {
 bot.on('callback_query', msg => {
     const {data} = msg
     const chatId = msg.message.chat.id
-
-    console.log(data)
-    console.log(chatId)
-
     switch (+data) {
         case 1 : bot.sendMessage(chatId, "Обучение будет длиться 10 месяцев 3 из них будут обучающими и подготовительными а остальные 7 месяцев разработка и работа с проектами.")
             break
